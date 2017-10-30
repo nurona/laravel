@@ -68,24 +68,25 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    @auth
+                    @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
+                    @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Contact
+					Contact
                 </div>
-
-                <div>
-                   <b>Contact saya indrawirawan1999@gmail.com</b></br>
-				   <a href="/">HOME</a><!--fungsi / adalah untuk kembali ke halaman tertentu-->
-            </div>
+				<div>
+					<b>Contact saya : indrawirawan1999@gmail.com</b>
+				</div>
+                <div class="links">
+					<br><a href="/"> Home </a> <!-- membuat tombol untuk kembali ke welcome -->
+                </div>
             </div>
         </div>
     </body>
