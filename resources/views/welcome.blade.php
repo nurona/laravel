@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Indra
+                    Laravel LanLan
                 </div>
 
                 <div class="links">
@@ -87,6 +87,7 @@
 					<a href="about">About</a>
 					<a href="percakapan">Percakapan</a>
 					<a href="contact">Contact</a>
+					<a href="template">Templating</a>
                 </div>
             </div>
         </div>
